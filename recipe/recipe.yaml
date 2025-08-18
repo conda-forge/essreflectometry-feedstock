@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: 34f990a7e3e697f3828da71fd4fe1e9e6a6bfce70cc0c8ca263e395ad7d7e62e
+  sha256: df73b3006c219bb32da6b476a5a57c25885d67eda52f164c567148a3abd056e0
 
 build:
   number: 0
