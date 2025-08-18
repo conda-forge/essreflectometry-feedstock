@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: 25.5.1
+  version: 25.8.0
   python_min: "3.10"
 
 package:
@@ -12,7 +12,7 @@ source:
   sha256: 34f990a7e3e697f3828da71fd4fe1e9e6a6bfce70cc0c8ca263e395ad7d7e62e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -24,17 +24,17 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }} 
-    - dask-core
+    - dask-core >=2022.1.0
     - python-dateutil
     - python-graphviz
-    - plopp
-    - orsopy
+    - plopp >=24.7.0
+    - orsopy >=1.2
     - sciline >=24.6.0
     - scipp >=24.09.1
-    - scippneutron >=24.7.0
+    - scippneutron >=24.10.0
     - scippnexus >=24.9.1
-    - essreduce
-    - pandas
+    - essreduce >=25.4.0
+    - pandas >=2.1.2
 
 tests:
   - python:
