@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: 25.8.0
+  version: "25.10.0"
   python_min: "3.10"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: df73b3006c219bb32da6b476a5a57c25885d67eda52f164c567148a3abd056e0
+  sha256: edd2b1ae5d159086f23ce3a5821e07ab01a3c69328c15d591769e9038efee91f
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - setuptools-scm >=8.0
     - pip
   run:
-    - python >=${{ python_min }} 
+    - python >=${{ python_min }}
     - dask-core >=2022.1.0
     - python-dateutil
     - python-graphviz
