@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: "25.10.0"
+  version: "25.11.0"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: edd2b1ae5d159086f23ce3a5821e07ab01a3c69328c15d591769e9038efee91f
+  sha256: 431baf82bc2350b53cd0a8c274bb55dfb33e1cae6b858adeffd9843f0b02ec62
 
 build:
   number: 0
@@ -33,7 +33,7 @@ requirements:
     - scipp >=24.09.1
     - scippneutron >=24.10.0
     - scippnexus >=24.9.1
-    - essreduce >=25.4.0
+    - essreduce >=25.11.0
     - pandas >=2.1.2
 
 tests:
