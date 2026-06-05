@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: "26.5.1"
+  version: "26.6.0"
   python_min: "3.11"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: d008d06eab3270329b25603670d691a623d15a744ddc7d71809f6d145ce126bc
+  sha256: be4f8b392e5ab8f1ed683a355a92f8b69a5b6e5c9e746b3d64f8b9db458f5b78
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dask-core >=2022.1.0
-    - python-dateutil
+    - python-dateutil >=2.8.2
     - python-graphviz
     - plopp >=24.7.0
     - orsopy >=1.2
@@ -33,7 +33,7 @@ requirements:
     - scipp >=24.09.1
     - scippneutron >=24.10.0
     - scippnexus >=24.9.1
-    - essreduce >=26.4.0
+    - essreduce >=26.6.0
     - esspolarization >=25.7.0
     - pandas >=2.1.2
 
@@ -48,8 +48,8 @@ about:
   summary: Reflectometry data reduction for the European Spallation Source
   license: BSD-3-Clause
   license_file: LICENSE
-  repository: https://github.com/scipp/essreflectometry
-  homepage: https://scipp.github.io/essreflectometry/
+  repository: https://github.com/scipp/ess/tree/main/packages/essreflectometry
+  homepage: https://scipp.github.io/ess/reflectometry/
 
 extra:
   recipe-maintainers:
