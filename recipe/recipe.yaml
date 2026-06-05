@@ -25,7 +25,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - dask-core >=2022.1.0
-    - python-dateutil
+    - python-dateutil >=2.8.2
     - python-graphviz
     - plopp >=24.7.0
     - orsopy >=1.2
@@ -33,7 +33,7 @@ requirements:
     - scipp >=24.09.1
     - scippneutron >=24.10.0
     - scippnexus >=24.9.1
-    - essreduce >=26.4.0
+    - essreduce >=26.6.0
     - esspolarization >=25.7.0
     - pandas >=2.1.2
 
@@ -48,8 +48,8 @@ about:
   summary: Reflectometry data reduction for the European Spallation Source
   license: BSD-3-Clause
   license_file: LICENSE
-  repository: https://github.com/scipp/essreflectometry
-  homepage: https://scipp.github.io/essreflectometry/
+  repository: https://github.com/scipp/ess/tree/main/packages/essreflectometry
+  homepage: https://scipp.github.io/ess/reflectometry/
 
 extra:
   recipe-maintainers:
