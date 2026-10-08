@@ -39,6 +39,9 @@ tests:
   - python:
       imports:
         - ess.reflectometry
+        - ess.amor
+        - ess.estia
+        - ess.freia
       pip_check: true
       python_version:
         - ${{ python_min }}.*
