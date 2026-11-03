@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: "26.10.1"
+  version: "26.10.2"
   python_min: "3.12"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: 5e103ab765543e6c137a6d4f3df6e0e3c9717aeff2870ba9e3dced91d46cd3fb
+  sha256: ee0e8c2d369d50e0fb09f7c7d486a2ccc1d57eef532821e7607de350903f5b59
 
 build:
   number: 0
