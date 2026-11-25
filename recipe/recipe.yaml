@@ -1,6 +1,6 @@
 context:
   name: essreflectometry
-  version: "26.11.0"
+  version: "26.11.1"
   python_min: "3.12"
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/essreflectometry-${{ version }}.tar.gz
-  sha256: 72b1e96fa21344300f514567c17b3a6a37064894fe208ddd203c73d464304584
+  sha256: 8a4e561c486c2bac16c7524d5e46259511a58fbe575b2c4cc31d03ebfbf99d5f
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - python-dateutil >=2.9.0
     - plopp >=26.5.0
     - orsopy >=1.2
-    - essreduce >=26.6.0
+    - essreduce >=26.11.1
     - esspolarization >=25.7.0
     - pandas >=2.1.2
     - scippneutron >=26.9.0
